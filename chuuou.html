@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/enchant.js"></script>
+    <script type="text/javascript" src="js/chuuou.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <style type="text/css">
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Hazard Map</a>
+            </div>
+            <div>
+                <ul class="nav navbar-nav">
+                    <li><a href="kamiyugi.html">上柚木小学校</a></li>
+                    <li><a href="kasiwagi.html">柏木小学校</a></li>
+                    <li class="active"><a href="chuuou.html">中央小学校</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="map">
+        <img src="img/chuuou_map.png" id="mapImg">
+        <div id="enchant-stage"></div>
+
+        <div class="chu_star1">
+            <img src="img/star.png" type="button" class="glyphicon glyphicon-star chuu1" data-backdrop="static" data-toggle="modal" data-target="#chu_Modal1" >
+        </div>
+        <div class="chu_star2">
+            <img src="img/star.png" type="button" class="glyphicon glyphicon-star chuu2" data-backdrop="static" data-toggle="modal" data-target="#chu_Modal2" >
+        </div>
+        <div class="chu_star3">
+            <img src="img/star.png" type="button" class="glyphicon glyphicon-star chuu3" data-backdrop="static" data-toggle="modal" data-target="#chu_Modal3" >
+        </div>
+        <div class="chu_star4">
+            <img src="img/star.png" type="button" class="glyphicon glyphicon-star chuu4" data-backdrop="static" data-toggle="modal" data-target="#chu_Modal4" >
+        </div>
+        <div class="chu_star5">
+            <img src="img/star.png" type="button" class="glyphicon glyphicon-star chuu5" data-backdrop="static" data-toggle="modal" data-target="#chu_Modal5" >
+        </div>
+        <div class="chu_star6">
+            <img src="img/star.png" type="button" class="glyphicon glyphicon-star chuu6" data-backdrop="static" data-toggle="modal" data-target="#chu_Modal6" >
+        </div>
+        <div class="chu_star7">
+            <img src="img/star.png" type="button" class="glyphicon glyphicon-star chuu7" data-backdrop="static" data-toggle="modal" data-target="#chu_Modal7" >
+        </div>
+
+
+        <div id="chu_Modal1" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="img/redcar.png" class="modalImg">
+                        <div class="alert alert-danger">
+                            <h2>まずい！飛び出しちゃった！</h2>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modalLeft">
+                            <img class="sMap" src="img/chuuou1.png">
+                        </div>
+                        <div class="modalRight">
+                            <div class="alert alert-warning">
+                                <h3>危険度：★★☆☆☆</h3>
+                            </div>
+                                <div class="alert alert-info">
+                                    <img src="img/webkisoicon3.png" align="left">
+                                    <h4>カーブミラーをよく見て、車がこないことを確認してから曲がろう</h4>
+                                    <br clear="left">
+                                </div>
+                                <div class="alert alert-info">
+                                    <img src="img/webkisoicon1.png" align="left">
+                                    <h4>Ｔ字路で一時停止して安全を確認しよう</h4>
+                                    <br clear="left">
+                                </div>
+                                <div class="alert alert-info">
+                                    <img src="img/webkisoicon2.png" align="left">
+                                    <h4>こどもや、自転車が飛び出してこないか注意しよう</h4>
+                                    <br clear="left">
+                                </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="chu_Modal2" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="img/redcar.png" class="modalImg">
+                        <div class="alert alert-danger">
+                            <h2>うしろから車が！</h2>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modalLeft">
+                            <img class="sMap" src="img/chuuou6.png">
+                        </div>
+                        <div class="modalRight">
+                            <div class="alert alert-warning">
+                                <h3>危険度：★★★☆☆</h3>
+                            </div>
+                            <div class="alert alert-info">
+                                <img class="" src="img/webkisoicon3.png" align="left">
+                                <h4>ガードレールがなく歩道が狭いから注意</h4>
+                                <br clear="left">
+                            </div>
+                            <div class="alert alert-info">
+                                <img class="" src="img/webkisoicon1.png" align="left">
+                                <h4>前からの歩行者とうしろからの車に気をつけて</h4>
+                                <br clear="left">
+                            </div>
+                            <div class="alert alert-info">
+                                <img class="" src="img/webkisoicon2.png" align="left">
+                                <h4>自転車は車の存在に気づいていないものだと考えて運転しよう</h4>
+                                <br clear="left">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="chu_Modal3" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="img/bluecar.png" class="modalImg">
+                        <div class="alert alert-danger">
+                            <h2>急に車が出てきた！</h2>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modalLeft">
+                            <img class="sMap" src="img/chuuou3.png">
+                        </div>
+                        <div class="modalRight">
+                            <div class="alert alert-warning">
+                                <h3>危険度：★★★☆☆</h3>
+                            </div>
+                            <div class="alert alert-info">
+                                <img class="" src="img/webkisoicon3.png" align="left">
+                                <h4>特にガードレールの無い側は車に注意</h4>
+                                <br clear="left">
+                            </div>
+                            <div class="alert alert-info">
+                                <img class="" src="img/webkisoicon1.png" align="left">
+                                <h4>カーブミラーがないので必ず一時停止しよう</h4>
+                                <br clear="left">
+                            </div>
+                            <div class="alert alert-info">
+                                <img class="" src="img/webkisoicon2.png" align="left">
+                                <h4>角から自転車が飛び出してくるものと思って！</h4>
+                                <br clear="left">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="chu_Modal4" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="img/whitecar.png" class="modalImg">
+                        <div class="alert alert-danger">
+                            <h2>今だ！行ける！わぁ、赤信号だった！</h2>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modalLeft">
+                            <img class="sMap" src="img/chuuou2.png">
+                        </div>
+                        <div class="modalRight">
+                            <div class="alert alert-warning">
+                                <h3>危険度：★★☆☆☆</h3>
+                            </div>
+                            <div class="alert alert-info">
+                                <img class="" src="img/webkisoicon3.png" align="left">
+                                <h4>横断歩道をわたる時に注意</h4>
+                                <br clear="left">
+                            </div>
+                            <div class="alert alert-info">
+                                <img class="" src="img/webkisoicon1.png" align="left">
+                                <h4>歩道側でスピードを出しすぎない</h4>
+                                <br clear="left">
+                            </div>
+                            <div class="alert alert-info">
+                                <img class="" src="img/webkisoicon2.png" align="left">
+                                <h4>安全運転を心がけよう</h4>
+                                <br clear="left">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="chu_Modal5" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="img/trackcar.png" class="modalImg">
+                        <div class="alert alert-danger">
+                            <h2>あぶない！トラックだ！</h2>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modalLeft">
+                            <img class="sMap" src="img/chuuou7.png">
+                        </div>
+                        <div class="modalRight">
+                            <div class="alert alert-warning">
+                                <h3>危険度：★★★★☆</h3>
+                            </div>
+                            <div class="alert alert-info">
+                                <img class="" src="img/webkisoicon3.png" align="left">
+                                <h4>とにかく交通量が多いから周りをよく見て歩こう</h4>
+                                <br clear="left">
+                            </div>
+                            <div class="alert alert-info">
+                                <img class="" src="img/webkisoicon1.png" align="left">
+                                <h4>横断歩道をわたる時は必ず自転車を降りてからわたろう</h4>
+                                <br clear="left">
+                            </div>
+                            <div class="alert alert-info">
+                                <img class="" src="img/webkisoicon2.png" align="left">
+                                <h4>角を曲がる時に歩行者がいないか注意しよう</h4>
+                                <br clear="left">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="chu_Modal6" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="img/bluecar.png" class="modalImg">
+                        <div class="alert alert-danger">
+                            <h2>まずい！飛び出しちゃった！</h2>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modalLeft">
+                            <img class="sMap" src="img/chuuou5.png">
+                        </div>
+                        <div class="modalRight">
+                            <div class="alert alert-warning">
+                                <h3>危険度：★★★☆☆</h3>
+                            </div>
+                            <div class="alert alert-info">
+                                <img class="" src="img/webkisoicon3.png" align="left">
+                                <h4>歩道での自転車に気をつけよう</h4>
+                                <br clear="left">
+                            </div>
+                            <div class="alert alert-info">
+                                <img class="" src="img/webkisoicon1.png" align="left">
+                                <h4>歩行者がいることを考えて走ろう</h4>
+                                <br clear="left">
+                            </div>
+                            <div class="alert alert-info">
+                                <img class="" src="img/webkisoicon2.png" align="left">
+                                <h4>スピードを出しすぎずに安全に運転しよう</h4>
+                                <br clear="left">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="chu_Modal7" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="img/bike.png" class="modalImg">
+                        <div class="alert alert-danger">
+                            <h2>自転車が飛び出してきた！</h2>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modalLeft">
+                            <img class="sMap" src="img/chuuou4.png">
+                        </div>
+                        <div class="modalRight">
+                            <div class="alert alert-warning">
+                                <h3>危険度：★★☆☆☆</h3>
+                            </div>
+                            <div class="alert alert-info">
+                                <img class="" src="img/webkisoicon3.png" align="left">
+                                <h4>マンションの陰から自転車や車が出てくる危険があるので注意しよう</h4>
+                                <br clear="left">
+                            </div>
+                            <div class="alert alert-info">
+                                <img class="" src="img/webkisoicon1.png" align="left">
+                                <h4>飛び出せば、自分が加害者にも被害者にもなりうるので角にきたら必ず止まろう</h4>
+                                <br clear="left">
+                            </div>
+                            <div class="alert alert-info">
+                                <img class="" src="img/webkisoicon2.png" align="left">
+                                <h4>車道が狭いのでスピードを落として安全運転で行こう</h4>
+                                <br clear="left">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

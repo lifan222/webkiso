@@ -1,0 +1,180 @@
+body {
+    background-image: url("../img/bgd.jpg");
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+}
+
+.navbar {
+    width: 960px;
+}
+
+.map {
+    position: relative;
+    width: 960px;
+    height: 560px;
+    top: -20px;
+}
+
+.modal-dialog {
+    width: 800px;
+}
+
+.modal-header img{
+    margin-left: 25%;
+}
+
+.modal-header h2{
+    text-align: center;
+    margin: 10px;
+}
+
+.modal-header .alert {
+    margin: 0;
+    padding: 0;
+}
+
+.modalRight .alert {
+    table-layout: fixed;
+    height: 90px;
+    margin-bottom: 8px;
+    padding: 0;
+}
+
+.modal-body h3 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.modal-body h4 {
+
+}
+
+.modal-body {
+    position: relative;
+    height: 400px;
+}
+
+.modalLeft {
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    width: 100px;
+    vertical-align: top;
+}
+
+.modalImg {
+    width: 400px;
+}
+
+.sMap {
+    width: 400px;
+    height: 380px;
+}
+
+.modalRight {
+    display: inline-block;
+    position: absolute;
+    left:410px;
+    height: 380px;
+    table-layout: fixed;
+    vertical-align: top;
+}
+
+
+#mapImg {
+    position: absolute;
+}
+
+#enchant-stage {
+    position: absolute;
+}
+
+.kasi_star1 {
+    position: absolute;
+    left: 184px;
+    top: 256px;
+}
+.kasi_star2 {
+    position: absolute;
+    left: 360px;
+    top: 320px;
+}
+.kasi_star3 {
+    position: absolute;
+    left: 424px;
+    top: 480px;
+}
+.kasi_star4 {
+    position: absolute;
+    left: 840px;
+    top: 336px;
+}
+
+.chu_star1 {
+    position: absolute;
+    left: 472px;
+    top: 256px;
+}
+.chu_star2 {
+    position: absolute;
+    left: 88px;
+    top: 464px;
+}
+.chu_star3 {
+    position: absolute;
+    left: 456px;
+    top: 336px;
+}
+.chu_star4 {
+    position: absolute;
+    left: 456px;
+    top: 448px;
+}
+.chu_star5 {
+    position: absolute;
+    left: 632px;
+    top: 368px;
+}
+.chu_star6 {
+    position: absolute;
+    left: 872px;
+    top: 336px;
+}
+.chu_star7 {
+    position: absolute;
+    left: 648px;
+    top: 496px;
+}
+
+.kami_star1 {
+    position: absolute;
+    left: 152px;
+    top: 112px;
+}
+.kami_star2 {
+    position: absolute;
+    left: 472px;
+    top: 48px;
+}
+.kami_star3 {
+    position: absolute;
+    left: 472px;
+    top: 208px;
+}
+.kami_star4 {
+    position: absolute;
+    left: 8px;
+    top: 400px;
+}
+.kami_star5 {
+    position: absolute;
+    left: 408px;
+    top: 480px;
+}
+
+
+

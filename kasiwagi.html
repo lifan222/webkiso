@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/enchant.js"></script>
+    <script type="text/javascript" src="js/kasiwagi.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <style type="text/css">
+        body {
+            margin: 0;
+        }
+    </style>
+
+</head>
+<body >
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Hazard Map</a>
+            </div>
+            <div>
+                <ul class="nav navbar-nav">
+                    <li><a href="kamiyugi.html">上柚木小学校</a></li>
+                    <li class="active"><a href="kasiwagi.html">柏木小学校</a></li>
+                    <li><a href="chuuou.html">中央小学校</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="map">
+        <img src="img/kasiwagi_map.png" id="mapImg">
+        <div id="enchant-stage"></div>
+
+        <div class="kasi_star1">
+            <img src="img/star.png" type="button" class="glyphicon glyphicon-star kasi1" data-backdrop="static" data-toggle="modal" data-target="#kasi_Modal1" >
+        </div>
+        <div class="kasi_star2">
+            <img src="img/star.png" type="button" class="glyphicon glyphicon-star kasi2" data-backdrop="static" data-toggle="modal" data-target="#kasi_Modal2" >
+        </div>
+        <div class="kasi_star3">
+            <img src="img/star.png" type="button" class="glyphicon glyphicon-star kasi3" data-backdrop="static" data-toggle="modal" data-target="#kasi_Modal3" >
+        </div>
+        <div class="kasi_star4">
+            <img src="img/star.png" type="button" class="glyphicon glyphicon-star kasi4" data-backdrop="static" data-toggle="modal" data-target="#kasi_Modal4" >
+        </div>
+
+        <div id="kasi_Modal1" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="img/redcar.png" class="modalImg">
+                        <div class="alert alert-danger">
+                            <h2>坂道注意！重力に負けるな！</h2>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modalLeft">
+                            <img class="sMap" src="img/star1map.png">
+                        </div>
+                        <div class="modalRight">
+                            <div class="alert alert-warning">
+                                <h3>危険度：★★★☆☆</h3>
+                            </div>
+                            <div class="alert alert-info">
+                                <img class="" src="img/webkisoicon3.png" align="left">
+                                <h4>すごい速さで自転車が下ってくるかもしれない！道の真ん中はあぶないぞ。ぶつかる可能性が高い！どちらか片側によっておこう！</h4>
+                                <br clear="left">
+                            </div>
+                            <div class="alert alert-info">
+                                <img class="" src="img/webkisoicon1.png" align="left">
+                                <h4>下り坂はついスピードを出してしまうけどカーブの先に誰かがいるかもしれない！常にブレーキを意識しよう！</h4>
+                                <br clear="left">
+                            </div>
+                            <div class="alert alert-info">
+                                <img class="" src="img/webkisoicon2.png" align="left">
+                                <h4></h4>
+                                <br clear="left">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="kasi_Modal2" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="img/whitecar.png" class="modalImg">
+                        <div class="alert alert-danger">
+                            <h2>悪魔の交差点にようこそ...</h2>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modalLeft">
+                            <img class="sMap" src="img/star2map.png">
+                        </div>
+                        <div class="modalRight">
+                            <div class="alert alert-warning">
+                                <h3>危険度：★★★★☆</h3>
+                            </div>
+                            <div class="alert alert-info">
+                                <img class="" src="img/webkisoicon3.png" align="left">
+                                <p>一番トリッキーな動きのできる君は周りに迷惑をかけがち。自分のことばかり考えないで坂から降りてる、もしくはお店から出てくる自転車や車に注意しよう！</p>
+                                <br clear="left">
+                            </div>
+                            <div class="alert alert-info">
+                                <img class="" src="img/webkisoicon1.png" align="left">
+                                <p>この交差点はとってもデリシャスなフードを提供してくれるデニーズ、セブンイレブン、動物病院などが鎮座する！お店に出入りする車や人の動きに注意しよう！</p>
+                                <br clear="left">
+                            </div>
+                            <div class="alert alert-info">
+                                <img class="" src="img/webkisoicon2.png" align="left">
+                                <p>歩道を行く人や車道脇を通る自転車にいっそう注意しよう！特に下り坂から降りてくる自転車はスピードがあるから注意！</p>
+                                <br clear="left">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="kasi_Modal3" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="img/bluecar.png" class="modalImg">
+                        <div class="alert alert-danger">
+                            <h2>人気ラーメン店、麺でるは込んでる！路上駐車に注意！</h2>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modalLeft">
+                            <img class="sMap" src="img/star3map.png">
+                        </div>
+                        <div class="modalRight">
+                            <div class="alert alert-warning">
+                                <h3>危険度：★★☆☆☆</h3>
+                            </div>
+                            <div class="alert alert-info">
+                                <img class="" src="img/webkisoicon3.png" align="left">
+                                <h4>道路を横断するときは物陰からはめっちゃ危ないぞ！ちゃんと横断歩道を渡ろう！</h4>
+                                <br clear="left">
+                            </div>
+                            <div class="alert alert-info">
+                                <img class="" src="img/webkisoicon1.png" align="left">
+                                <h4>車道の障害物を避けるときは前後確認！障害物の陰から何かが飛び出てくるかもしれないのでそこもよく確認！</h4>
+                                <br clear="left">
+                            </div>
+                            <div class="alert alert-info">
+                                <img class="" src="img/webkisoicon2.png" align="left">
+                                <h4>ラーメン食べたいのはわかるけど路上駐車よくない！</h4>
+                                <br clear="left">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="kasi_Modal4" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="img/trackcar.png" class="modalImg">
+                        <div class="alert alert-danger">
+                            <h2>お前、ここで散る</h2>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modalLeft">
+                            <img class="sMap" src="img/star4map.png">
+                        </div>
+                        <div class="modalRight">
+                            <div class="alert alert-warning">
+                                <h3>危険度：★★★☆☆</h3>
+                            </div>
+                            <div class="alert alert-info">
+                                <img class="" src="img/webkisoicon3.png" align="left">
+                                <h4>カーブの先から車がくるかも！目だけでなく音も聞いて見極めよう！ここは死亡事故のあった場所だ！すごく注意しよう！死ぬぞ！</h4>
+                                <br clear="left">
+                            </div>
+                            <div class="alert alert-info">
+                                <img class="" src="img/webkisoicon1.png" align="left">
+                                <h4>横断歩道があっても一本道でも前後左右をしっかり確認しよう！曲がってきたドライバーの感覚だけにあなたの命を預けてていいの？</h4>
+                                <br clear="left">
+                            </div>
+                            <div class="alert alert-info">
+                                <img class="" src="img/webkisoicon2.png" align="left">
+                                <h4>カーブが終わっていきなり加速するのはやめよう！ここには横断歩道があるぞ！手前で止まる準備をしておこう！</h4>
+                                <br clear="left">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

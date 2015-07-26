@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/enchant.js"></script>
+    <script type="text/javascript" src="js/kamiyugi.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <style type="text/css">
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+<body >
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Hazard Map</a>
+            </div>
+            <div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="kamiyugi.html">上柚木小学校</a></li>
+                    <li><a href="kasiwagi.html">柏木小学校</a></li>
+                    <li><a href="chuuou.html">中央小学校</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="map">
+        <img src="img/kamiyugi_map.png" id="mapImg">
+        <div id="enchant-stage"></div>
+
+        <div class="kami_star1">
+            <img src="img/star.png" type="button" class="glyphicon glyphicon-star kami1" data-backdrop="static" data-toggle="modal" data-target="#kami_Modal1" >
+        </div>
+        <div class="kami_star2">
+            <img src="img/star.png" type="button" class="glyphicon glyphicon-star kami2" data-backdrop="static" data-toggle="modal" data-target="#kami_Modal2" >
+        </div>
+        <div class="kami_star3">
+            <img src="img/star.png" type="button" class="glyphicon glyphicon-star kami3" data-backdrop="static" data-toggle="modal" data-target="#kami_Modal3" >
+        </div>
+        <div class="kami_star4">
+            <img src="img/star.png" type="button" class="glyphicon glyphicon-star kami4" data-backdrop="static" data-toggle="modal" data-target="#kami_Modal4" >
+        </div>
+        <div class="kami_star5">
+            <img src="img/star.png" type="button" class="glyphicon glyphicon-star kami5" data-backdrop="static" data-toggle="modal" data-target="#kami_Modal5" >
+        </div>
+
+
+        <div id="kami_Modal1" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="img/bike.png" class="modalImg">
+                        <div class="alert alert-danger">
+                            <h2>前から自転車が！！</h2>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modalLeft">
+                            <img class="sMap" src="img/kamiyugicap1hoshi.png">
+                        </div>
+                        <div class="modalRight">
+                            <div class="alert alert-warning">
+                                <h3>危険度：★★☆☆☆</h3>
+                            </div>
+                            <div class="alert alert-info">
+                                <img class="" src="img/webkisoicon3.png" align="left">
+                                <h4>つねに前に注意しよう。せまい道で急に自転車がくるとよけきれないよ。</h4>
+                                <br clear="left">
+                            </div>
+                            <div class="alert alert-info">
+                                <img class="" src="img/webkisoicon1.png" align="left">
+                                <h4>幅のせまい道でスピードを出すとあぶないよ。自転車にのっているときは、歩いているときよりもっと前方に注意しようね。</h4>
+                                <br clear="left">
+                            </div>
+                            <div class="alert alert-info">
+                                <img class="" src="img/webkisoicon2.png" align="left">
+                                <h4></h4>
+                                <br clear="left">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="kami_Modal2" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="img/bluecar.png" class="modalImg">
+                        <div class="alert alert-danger">
+                            <h2>うわー！車が信号無視だ！！</h2>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modalLeft">
+                            <img class="sMap" src="img/kamiyugicap2hoshi.png">
+                        </div>
+                        <div class="modalRight">
+                            <div class="alert alert-warning">
+                                <h3>危険度：★★★★☆</h3>
+                            </div>
+                            <div class="alert alert-info">
+                                <img class="" src="img/webkisoicon3.png" align="left">
+                                <h4>道路のまわりでは車に注意しようね。メールや音楽に夢中になってない？</h4>
+                                <br clear="left">
+                            </div>
+                            <div class="alert alert-info">
+                                <img class="" src="img/webkisoicon1.png" align="left">
+                                <h4>幅のせまい道でスピードを出すとあぶないよ。自転車にのっているときは、歩いているときよりもっと前方に注意しようね。</h4>
+                                <br clear="left">
+                            </div>
+                            <div class="alert alert-info">
+                                <img class="" src="img/webkisoicon2.png" align="left">
+                                <h4>信号無視は犯罪です。</h4>
+                                <br clear="left">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="kami_Modal3" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="img/stranger.png" class="modalImg">
+                        <div class="alert alert-danger">
+                            <h2>あれ？だれかがうしろに…</h2>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modalLeft">
+                            <img class="sMap" src="img/kamiyugicap3hoshi.png">
+                        </div>
+                        <div class="modalRight">
+                            <div class="alert alert-warning">
+                                <h3>危険度：★★★☆☆</h3>
+                            </div>
+                            <div class="alert alert-info">
+                                <img class="" src="img/webkisoicon3.png" align="left">
+                                <p>多摩ニュータウンにはたくさんの公園や緑地（しぜんの多いところ）があります。暗がりは不審者（ふしんしゃ）にとってかくれやすい場所です。</p>
+                                <br clear="left">
+                            </div>
+                            <div class="alert alert-info">
+                                <img class="" src="img/webkisoicon1.png" align="left">
+                                <h4></h4>
+                                <br clear="left">
+                            </div>
+                            <div class="alert alert-info">
+                                <img class="" src="img/webkisoicon2.png" align="left">
+                                <h4></h4>
+                                <br clear="left">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="kami_Modal4" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="img/stranger.png" class="modalImg">
+                        <div class="alert alert-danger">
+                            <h2>暗いけど、車が走っているからあんしんだよね…うわあああ！！</h2>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modalLeft">
+                            <img class="sMap" src="img/kamiyugicap4hoshi.png">
+                        </div>
+                        <div class="modalRight">
+                            <div class="alert alert-warning">
+                                <h3>危険度：★★☆☆☆</h3>
+                            </div>
+                            <div class="alert alert-info">
+                                <img class="" src="img/webkisoicon3.png" align="left">
+                                <h4>緑地の側はみんなの家や公園からはなれていて、人目がありません。車でのゆうかいじけんが起こりやすいです。</h4>
+                                <br clear="left">
+                            </div>
+                            <div class="alert alert-info">
+                                <img class="" src="img/webkisoicon1.png" align="left">
+                                <h4></h4>
+                                <br clear="left">
+                            </div>
+                            <div class="alert alert-info">
+                                <img class="" src="img/webkisoicon2.png" align="left">
+                                <h4></h4>
+                                <br clear="left">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="kami_Modal5" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="img/stranger.png" class="modalImg">
+                        <div class="alert alert-danger">
+                            <h2>だれもいない…あっ！！</h2>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modalLeft">
+                            <img class="sMap" src="img/kamiyugicap5hoshi.png">
+                        </div>
+                        <div class="modalRight">
+                            <div class="alert alert-warning">
+                                <h3>危険度：★☆☆☆☆</h3>
+                            </div>
+                            <div class="alert alert-info">
+                                <img class="" src="img/webkisoicon3.png" align="left">
+                                <h4>多摩ニュータウンのマンションの間の道は車道や大通りからはなれています。危険な目にあっても大人の目がとどきません。</h4>
+                                <br clear="left">
+                            </div>
+                            <div class="alert alert-info">
+                                <img class="" src="img/webkisoicon1.png" align="left">
+                                <h4></h4>
+                                <br clear="left">
+                            </div>
+                            <div class="alert alert-info">
+                                <img class="" src="img/webkisoicon2.png" align="left">
+                                <h4></h4>
+                                <br clear="left">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
